@@ -418,6 +418,10 @@ a {
     margin-left: 100px;
 }
 
+.container-consulta div img {
+    max-width: none;
+}
+
 .container-consulta p {
     font-size: 22px;
     color: #FFFFFF;
@@ -427,6 +431,7 @@ a {
 
 .container-consulta .btn-primary {
     margin-left: 100px;
+    padding: 12px 20px;
 }
 
 .container .btn-primary span {
@@ -583,6 +588,7 @@ a {
 /* -----------------------------------*/
 
 .container-sintomas .sintomas-perguntas {
+    min-height: 1000px;
     max-width: 568px;
     margin: 0 auto;
     background: transparent linear-gradient(204deg, #9C6756 0%, #687DE7 100%) 0% 0% no-repeat padding-box;
@@ -640,9 +646,9 @@ a {
 .container-sintomas .card {
     box-shadow: 0px 10px 20px #00000029;
     border: none;
-    border-radius: 20px;
+    border-radius: 20px !important;
     background: none;
-    margin-top: 40px;
+    margin-top: 50px;
     box-shadow: none;
 }
 
@@ -777,6 +783,15 @@ a {
     color: #315267;
 }
 
+.container-rodape div:before {
+    content: '';
+    width: auto;
+    height: 1px;
+    display: block;
+    margin-bottom: 50px;
+    background: #ECECEC;
+}
+
 .copy {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -864,6 +879,9 @@ a {
 /* consulta media */
 
 @media(max-width:1200px) {
+    .container-consulta {
+        padding-bottom: 100px;
+    }
     .container-consulta div img {
         display: none;
     }
@@ -970,7 +988,14 @@ a {
     }
 }
 
-@media(max-width:992px) {}
+
+/* container midia media */
+
+@media(max-width:1200px) {
+    .container-midia div h2 {
+        text-align: center;
+    }
+}
 
 
 /* footer media */
