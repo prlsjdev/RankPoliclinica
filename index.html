@@ -106,7 +106,7 @@
                     <a href="" class="btn-primary">agendar exame</a>
                 </div>
 
-                <div class="col-sm-12 col-lg-4 box">
+                <div class="col-sm-12 col-lg-4 col-md-6 offset-md-3 offset-lg-0 box">
                     <span>sorologia</span>
                     <div class="box-header">
                         <h2 class="title-box">Anticorpos Totais IgA IgG IgM</h2>
@@ -175,6 +175,7 @@
                         <h2>Consulte-se com um de nossos especialistas</h2>
                         <p>& tire todas as dúvidas sobre o resultado do seu exame</p>
                         <button href="https://api.whatsapp.com/send?phone=21999999999" class="btn-primary"><i class="fa fa-whatsapp fa-lg text-success" aria-hidden="true"></i><span>consulte-nos para valores especiais</span></button>
+
                     </div>
                     <div class="col-12 col-md-4">
                         <img src="img/medica-corona-virus.png" class="img-fluid" alt="Imagem de uma médica">
@@ -528,7 +529,7 @@
                     <li>
                         <h2>Confira as Unidades da Clínica Popular</h2>
                     </li>
-                    <li class="mb-3">
+                    <li>
                         <p>Avenida Dom Hélder Câmara, nº 7.201, <span class="d-block">Lojas A & B – Abolição</span></p>
                     </li>
                     <li>
@@ -540,8 +541,14 @@
                 </ul>
 
 
-                <div class="col-12 col-lg-3">
+                <div class="col-12 col-lg-3 face-insta">
                     <img src="img/Imagem 3.png" alt="Facebook policlinica saude já">
+                    <div>
+                        <a href="">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <span>Visite o instagram</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -561,7 +568,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-        $('.collapse').on('shown.bs.collapse', function() {
+        $('.collapse').on('show.bs.collapse', function() {
             headerDiv = '#' + $(this).attr('aria-labelledby');
             $(headerDiv).toggleClass('active');
         });

@@ -68,11 +68,11 @@ a {
     background-size: cover;
 }
 
-.infos {
+.container-destaque .infos {
     padding-top: 60px
 }
 
-.titulo h1 {
+.container-destaque .infos .titulo h1 {
     font-family: 'Ruda', sans-serif;
     font-size: 36px;
     font-weight: 800;
@@ -80,28 +80,28 @@ a {
     color: #fff;
 }
 
-.titulo p {
+.container-destaque .infos .titulo p {
     font-family: 'Roboto Slab', serif;
     font-size: 22px;
     font-weight: 300;
     color: #fff;
 }
 
-.agende-agora {
+.container-destaque .infos .agende-agora {
     text-align: right;
 }
 
-.agende-agora p {
+.container-destaque .infos .agende-agora p {
     font-family: 'Ruda', sans-serif;
     color: #fff;
 }
 
-.agende-agora p span {
+.container-destaque .infos .agende-agora p span {
     font-family: 'Roboto Slab', serif;
     margin: 0 10px;
 }
 
-.agende-agora .btn-primary {
+.container-destaque .infos .agende-agora .btn-primary {
     background: #fff;
     background-color: #fff;
     border-color: #fff;
@@ -111,7 +111,7 @@ a {
     transition: 1.0s;
 }
 
-.agende-agora .btn-primary span {
+.container-destaque .infos .agende-agora .btn-primary span {
     font-family: 'Ruda', sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -121,12 +121,12 @@ a {
     text-transform: uppercase;
 }
 
-.agende-agora .btn-primary:hover {
+.container-destaque .infos .agende-agora .btn-primary:hover {
     text-decoration: none;
     transform: scale(1.05);
 }
 
-.agende-agora a {
+.container-destaque .infos .agende-agora a {
     color: #fff;
     margin-right: 20px;
     font-family: 'Roboto Slab', serif;
@@ -135,57 +135,27 @@ a {
     transition: 1.0s;
 }
 
-.agende-agora a:hover {
+.container-destaque .infos .agende-agora a:hover {
     text-decoration: none;
 }
 
-@media(max-width:600px) {
-    .agende-agora .btn-primary {
-        background: #fff;
-        background-color: #fff;
-        border-color: #fff;
-        border-radius: 20px;
-        padding: 10px 30px;
-        margin-top: 10px;
-        text-align: center;
-        transition: 1.0s;
-    }
-    .agende-agora .btn-primary span {
-        display: none;
-    }
-}
-
-@media(max-width:990px) {
-    .agende-agora .btn-primary {
-        display: block;
-        margin: 0 auto;
-    }
-    .titulo,
-    .agende-agora {
-        text-align: center;
-    }
-    .fa {
-        display: block !important;
-    }
-}
-
 
 /* -----------------------------------*/
 
 
-/* ---------->>> Introdução - BOX <<<-----------*/
+/* ---------->>> CONTAINER DESTAQUE - BOX <<<-----------*/
 
 
 /* -----------------------------------*/
 
-.box {
+.container-destaque .box {
     margin-top: 34px;
     margin-bottom: 125px;
     position: relative;
     text-align: center;
 }
 
-.box span {
+.container-destaque .box span {
     min-width: 140px;
     border-radius: 20px;
     background: #68C1E7;
@@ -203,15 +173,15 @@ a {
     z-index: 1;
 }
 
-.box-header {
+.container-destaque .box-header {
+    font-family: 'Ruda', sans-serif;
     min-height: 125px;
     border-radius: 10px 10px 0px 0px;
     background: rgba(54, 71, 156, 0.8);
     transition: background 1.0s;
 }
 
-.box-header h2 {
-    font-family: 'Ruda', sans-serif;
+.container-destaque .box-header h2 {
     font-size: 18px;
     font-weight: 800;
     padding-top: 20px;
@@ -219,8 +189,7 @@ a {
     color: #fff;
 }
 
-.box-header p:nth-child(2) {
-    font-family: 'Ruda', sans-serif;
+.container-destaque .box-header p:nth-child(2) {
     font-size: 32px;
     font-weight: 800;
     margin-bottom: -10px;
@@ -228,15 +197,14 @@ a {
     color: #fff;
 }
 
-.box-header p:nth-child(3) {
-    font-family: 'Ruda', sans-serif;
+.container-destaque .box-header p:nth-child(3) {
     font-size: 12px;
     font-weight: 800;
     color: #fff;
     letter-spacing: -0.72px;
 }
 
-.box-content {
+.container-destaque .box-content {
     min-height: 480px;
     background: rgba(54, 71, 156, 0.3) 0% 0% no-repeat padding-box;
     padding: 20px 25px;
@@ -245,15 +213,15 @@ a {
     transition: background 1.0s;
 }
 
-.box:hover .box-content {
+.container-destaque .box:hover .box-content {
     background: rgba(54, 71, 156, 0.7) 0% 0% no-repeat padding-box;
 }
 
-.box:hover .box-header {
+.container-destaque .box:hover .box-header {
     background: rgba(54, 71, 156, 1) 0% 0% no-repeat padding-box;
 }
 
-.box-content li p:nth-child(2)::after {
+.container-destaque .box-content li p:nth-child(2)::after {
     content: '';
     display: block;
     text-align: center;
@@ -266,14 +234,14 @@ a {
     top: 15px;
 }
 
-.box-content li h3 {
+.container-destaque .box-content li h3 {
     font-family: 'Ruda', sans-serif;
     font-size: 14px;
     color: #fff;
     text-transform: uppercase;
 }
 
-.box-content li p:nth-child(2) {
+.container-destaque .box-content li p:nth-child(2) {
     font-family: 'Roboto Slab', serif;
     font-size: 12px;
     padding-bottom: 10px;
@@ -281,7 +249,7 @@ a {
     letter-spacing: 0;
 }
 
-.box .btn-primary {
+.container-destaque .box .btn-primary {
     background: #DDE5F4 0% 0% no-repeat padding-box;
     max-height: 46px;
     min-width: 220px;
@@ -298,7 +266,7 @@ a {
     transform: translate(-50%, 0);
 }
 
-.box .btn-primary {
+.container-destaque .box .btn-primary {
     text-decoration: none;
 }
 
@@ -311,12 +279,12 @@ a {
 
 /* -----------------------------------*/
 
-.titulo-agendamento {
+.container-agendamento .titulo-agendamento {
     text-align: center;
+    font-family: 'Ruda', sans-serif;
 }
 
-.titulo-agendamento p:first-child {
-    font-family: 'Ruda', sans-serif;
+.container-agendamento .titulo-agendamento p:first-child {
     font-weight: 800;
     font-size: 14px;
     font-weight: 800;
@@ -325,8 +293,7 @@ a {
     text-transform: uppercase;
 }
 
-.titulo-agendamento h2 {
-    font-family: 'Ruda', sans-serif;
+.container-agendamento .titulo-agendamento h2 {
     font-size: 36px;
     font-weight: 800;
     letter-spacing: 5.4px;
@@ -334,16 +301,16 @@ a {
     text-transform: uppercase;
 }
 
-.titulo-agendamento p:last-child {
+.container-agendamento .titulo-agendamento p:last-child {
     font-family: 'Roboto Slab', serif;
     font-size: 14px;
     font-weight: 400;
     color: #315267;
 }
 
-.circle-1,
-.circle-2,
-.circle-3 {
+.container-agendamento .circle-1,
+.container-agendamento .circle-2,
+.container-agendamento .circle-3 {
     width: 180px;
     height: 180px;
     background: #fff;
@@ -351,7 +318,7 @@ a {
     margin: 0 auto;
 }
 
-.circle-1::before {
+.container-agendamento .circle-1::before {
     content: '1';
     color: #fff;
     font-family: 'Ruda', sans-serif;
@@ -368,7 +335,7 @@ a {
     top: 80%;
 }
 
-.circle-2::before {
+.container-agendamento .circle-2::before {
     content: '2';
     color: #fff;
     font-family: 'Ruda', sans-serif;
@@ -385,7 +352,7 @@ a {
     top: 80%;
 }
 
-.circle-3::before {
+.container-agendamento .circle-3::before {
     content: '3';
     color: #fff;
     font-family: 'Ruda', sans-serif;
@@ -402,12 +369,12 @@ a {
     top: 80%;
 }
 
-.forma-de-agendamento {
+.container-agendamento .forma-de-agendamento {
     text-align: center;
     margin-top: 50px;
 }
 
-.forma-de-agendamento h3 {
+.container-agendamento .forma-de-agendamento h3 {
     font-family: 'Ruda', sans-serif;
     font-weight: 700;
     font-size: 22px;
@@ -415,19 +382,13 @@ a {
     letter-spacing: 3.3px;
 }
 
-.forma-de-agendamento p {
+.container-agendamento .forma-de-agendamento p {
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
     font-size: 16px;
     color: #C3C3C3;
     text-align: center;
     margin-bottom: 200px;
-}
-
-@media(max-width:990px) {
-    .forma-de-agendamento p {
-        margin-bottom: 50px;
-    }
 }
 
 
@@ -441,14 +402,14 @@ a {
 
 .container-consulta {
     max-width: 100%;
-    height: 615px;
     margin: 0;
     background: transparent linear-gradient(247deg, #66C4D5 0%, #6888E7 100%) 0% 0% no-repeat padding-box;
     opacity: 1;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 700;
 }
 
 .container-consulta h2 {
-    font-family: 'Ruda', sans-serif;
     font-weight: 700;
     font-size: 48px;
     color: #FFFFFF;
@@ -458,8 +419,6 @@ a {
 }
 
 .container-consulta p {
-    font-family: 'Ruda', sans-serif;
-    font-weight: 700;
     font-size: 22px;
     color: #FFFFFF;
     margin-left: 100px;
@@ -478,48 +437,6 @@ a {
     letter-spacing: 2.1px;
     color: #4AAE20;
     text-transform: uppercase;
-}
-
-@media(max-width:1200px) {
-    .container-consulta div img {
-        display: none;
-    }
-    .container-consulta .btn-primary {
-        display: block;
-        margin: 0 auto;
-    }
-    .container-consulta h2,
-    .container-consulta p {
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    .consulte .btn-primary {
-        display: block;
-        margin: 0 auto;
-    }
-}
-
-@media(max-width:600px) {
-    .container-consulta h2 {
-        font-size: 32px;
-        margin-left: 0;
-        text-align: center;
-    }
-    .container-consulta p {
-        font-size: 16px;
-    }
-    .container-consulta .btn-primary {
-        max-width: 320px;
-        display: block;
-        margin: 0 auto;
-    }
-    .container-consulta .btn-primary span {
-        display: none;
-    }
-    .fa-lg {
-        vertical-align: 50% !important;
-    }
 }
 
 
@@ -559,7 +476,7 @@ a {
     color: #68C1E7;
 }
 
-.titulo-secondary {
+.container-sobre-o-corona .titulo-secondary {
     font-family: 'Ruda', sans-serif !important;
     font-weight: 800 !important;
     text-align: left !important;
@@ -578,16 +495,6 @@ a {
     color: #636363;
 }
 
-@media(max-width:990px) {
-    .container-sobre-o-corona ul li h3,
-    .container-sobre-o-corona ul li p {
-        text-align: center;
-    }
-    .titulo-secondary {
-        text-align: center !important;
-    }
-}
-
 
 /* -----------------------------------*/
 
@@ -604,8 +511,11 @@ a {
     letter-spacing: 5.4px;
 }
 
-.container-sintomas h2 {
+.container-sintomas {
     font-family: 'Ruda', sans-serif;
+}
+
+.container-sintomas h2 {
     font-size: 36px;
     font-weight: 700;
     color: #636363;
@@ -614,7 +524,6 @@ a {
 }
 
 .container-sintomas h3 {
-    font-family: 'Ruda', sans-serif;
     font-size: 22px;
     font-weight: 800;
     text-align: left;
@@ -634,36 +543,389 @@ a {
     padding-left: 10px;
 }
 
-.principais-sintomas {
+.container-sintomas .principais-sintomas {
     max-width: 568px;
     margin: 0 auto;
 }
 
-.sintoma-box {
+.container-sintomas .sintoma-box {
     padding-left: 30px;
 }
 
-.sintoma-box span {
-    font-family: 'Ruda', sans-serif;
+.container-sintomas .sintoma-box span {
     font-weight: 700;
     font-size: 22px;
     letter-spacing: 2.7px;
 }
 
-.spn-ex {
+.container-sintomas .spn-ex {
     font-size: 50px !important;
 }
 
-.sintoma-box p {
+.container-sintomas .sintoma-box p {
     margin-top: 10px;
     margin-bottom: 60px;
 }
 
-.last-text {
+.container-sintomas .last-text {
     position: relative;
     bottom: 80px;
     left: 20px;
 }
+
+
+/* -----------------------------------*/
+
+
+/* ---------->>> Duvidas <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.container-sintomas .sintomas-perguntas {
+    max-width: 568px;
+    margin: 0 auto;
+    background: transparent linear-gradient(204deg, #9C6756 0%, #687DE7 100%) 0% 0% no-repeat padding-box;
+}
+
+.accordion>.card:not(:last-of-type) {
+    border-bottom-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+
+.container-sintomas .card-header {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 700;
+}
+
+.container-sintomas .card-header h2 {
+    font-size: 18px;
+    letter-spacing: 2.7px;
+    display: block;
+    padding-right: 30px;
+    text-align: left;
+    color: #fff;
+}
+
+.container-sintomas .card-header button {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2.7px;
+    display: block;
+    padding-right: 30px;
+    text-align: left;
+    color: #fff;
+}
+
+.container-sintomas .btn {
+    color: #fff;
+}
+
+.container-sintomas .btn:hover {
+    color: #fff;
+}
+
+.container-sintomas .active {
+    background: rgba(255, 255, 255, 0.2) 0% 0% no-repeat padding-box;
+}
+
+.container-sintomas .btn-link:hover {
+    text-decoration: none;
+}
+
+.container-sintomas .btn-link {
+    display: flex;
+}
+
+.container-sintomas .card {
+    box-shadow: 0px 10px 20px #00000029;
+    border: none;
+    border-radius: 20px;
+    background: none;
+    margin-top: 40px;
+    box-shadow: none;
+}
+
+.container-sintomas .card-header {
+    border-radius: 20px;
+    border-bottom: none;
+    margin-bottom: 0px !important;
+    background: none;
+    width: 100%;
+    position: relative;
+}
+
+.container-sintomas .active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.container-sintomas .collapsible-link {
+    width: 100%;
+    position: relative;
+    text-align: left;
+}
+
+.container-sintomas .collapsible-link::before {
+    content: '\f067';
+    position: absolute;
+    top: 50%;
+    right: 0.8rem;
+    transform: translateY(-50%);
+    display: block;
+    font-family: 'FontAwesome';
+    font-size: 1.1rem;
+}
+
+.container-sintomas .collapsible-link[aria-expanded='true']::before {
+    content: '\f068';
+}
+
+.container-sintomas .card p {
+    color: #fff;
+}
+
+.container-sintomas .card-body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    text-align: left;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2) 0% 0% no-repeat padding-box;
+}
+
+.container-sintomas .collapse {
+    border-radius: 40px;
+}
+
+
+/* -----------------------------------*/
+
+
+/* ---------->>> FEEDBACK <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.container-midia {
+    margin-top: 180px;
+}
+
+.container-midia {
+    font-family: 'Ruda', sans-serif;
+}
+
+.container-midia div h2 {
+    text-align: left;
+    font-weight: 800;
+    font-size: 36px;
+    letter-spacing: 5.4px;
+    color: #68C1E7;
+}
+
+.container-midia div .img-fluid {
+    margin: 10px auto;
+}
+
+.container-midia .cartao-saude-master h2 {
+    text-align: center !important;
+    color: #636363 !important;
+}
+
+.container-midia div p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    text-align: center;
+    color: #636363;
+}
+
+.container-midia .extra {
+    max-width: 368px;
+    height: 167px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 20px 20px 0px 0px;
+    margin: 0 auto;
+}
+
+
+/* -----------------------------------*/
+
+
+/* ---------->>> CONTAINER - FOOTER <<<-----------*/
+
+
+/* -----------------------------------*/
+
+.info-footer {
+    margin: 90px 0px;
+}
+
+.info-footer div p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #636363;
+}
+
+.lista-footer li h2 {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    color: #68C1E7;
+}
+
+.lista-footer p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #315267;
+}
+
+.copy {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #636363;
+}
+
+.copy img {
+    margin-left: 50px;
+    padding-bottom: 30px;
+}
+
+.copy p {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    margin: 90px 0;
+}
+
+.face-insta .fa {
+    font-size: 36px;
+    color: #00609C;
+}
+
+.face-insta a {
+    display: inline-block;
+}
+
+.face-insta span {
+    font-family: 'Ruda', sans-serif;
+    font-weight: 800;
+    color: #00609C;
+    display: inline-block;
+}
+
+.face-insta div {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.face-insta div span {
+    margin-left: 10px;
+}
+
+
+/* media container destaque */
+
+@media(max-width:576px) {
+    .container-destaque .infos .agende-agora .btn-primary {
+        border-radius: 20px;
+        padding: 10px 30px;
+        margin-top: 10px;
+        text-align: center;
+        transition: 1.0s;
+    }
+    .container-destaque .infos .agende-agora .btn-primary span {
+        display: none;
+    }
+    .fa {
+        display: block !important;
+    }
+}
+
+
+/* media agendamento */
+
+@media(max-width:1200px) {
+    .container-destaque .box {
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width:992px) {
+    .container-destaque .infos .agende-agora .btn-primary {
+        display: block;
+        margin: 10px auto;
+    }
+    .container-destaque .infos .titulo,
+    .container-destaque .infos .agende-agora {
+        text-align: center;
+    }
+}
+
+
+/* consulta media */
+
+@media(max-width:1200px) {
+    .container-consulta div img {
+        display: none;
+    }
+    .container-consulta .btn-primary {
+        display: block;
+        margin: 0 auto;
+    }
+    .container-consulta h2,
+    .container-consulta p {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .consulte .btn-primary {
+        display: block;
+        margin: 0 auto;
+    }
+    .container-agendamento .forma-de-agendamento p {
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width:576px) {
+    .container-consulta h2 {
+        font-size: 32px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .container-consulta p {
+        font-size: 16px;
+    }
+    .container-consulta .btn-primary {
+        max-width: 320px;
+        display: block;
+        margin: 0 auto;
+    }
+    .container-consulta .btn-primary span {
+        display: none;
+    }
+    .fa-lg {
+        vertical-align: 50% !important;
+    }
+}
+
+
+/* sobre o corona media */
+
+@media(max-width:992px) {
+    .container-sobre-o-corona ul li h3,
+    .container-sobre-o-corona ul li p {
+        text-align: center;
+    }
+    .container-sobre-o-corona .titulo-secondary {
+        text-align: center !important;
+    }
+}
+
+
+/* duvidas media */
+
+
+/* sintomas media */
 
 @media(max-width:1200px) {
     .sintoma-box span {
@@ -697,244 +959,30 @@ a {
     .sintomas p {
         text-align: center;
     }
-}
-
-
-/* -----------------------------------*/
-
-
-/* ---------->>> Duvidas <<<-----------*/
-
-
-/* -----------------------------------*/
-
-.sintomas-perguntas {
-    max-width: 568px;
-    margin: 0 auto;
-    min-height: 1290px;
-    background: transparent linear-gradient(204deg, #9C6756 0%, #687DE7 100%) 0% 0% no-repeat padding-box;
-    padding-bottom: 100px;
-    opacity: 1;
-}
-
-.accordion>.card:not(:last-of-type) {
-    border-bottom-right-radius: 20px !important;
-    border-bottom-left-radius: 20px !important;
-}
-
-.card-header h2 {
-    font-family: 'Ruda', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 2.7px;
-    display: block;
-    padding-right: 30px;
-    text-align: left;
-    color: #fff;
-}
-
-.card-header button {
-    font-family: 'Ruda', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 2.7px;
-    display: block;
-    padding-right: 30px;
-    text-align: left;
-    color: #fff;
-}
-
-.btn {
-    color: #fff;
-}
-
-@media(max-width:320px) {
-    .sintomas-perguntas {
-        display: none;
+    .container-sintomas h2,
+    .container-sintomas h3,
+    .container-sintomas p {
+        text-align: center;
+    }
+    .container-sintomas .sintoma-box p {
+        bottom: 20px;
+        left: 0px;
     }
 }
 
-.btn:hover {
-    color: #fff;
-}
-
-.active {
-    background: rgba(255, 255, 255, 0.2) 0% 0% no-repeat padding-box;
-}
-
-.btn-link:hover {
-    text-decoration: none;
-}
-
-.btn-link {
-    display: flex;
-}
-
-.card {
-    box-shadow: 0px 10px 20px #00000029;
-    border: none;
-    border-radius: 20px;
-    background: none;
-    margin-top: 40px;
-    box-shadow: none;
-}
-
-.card-header {
-    border-radius: 20px;
-    border-bottom: none;
-    margin-bottom: 0px !important;
-    background: none;
-    width: 100%;
-    position: relative;
-}
+@media(max-width:992px) {}
 
 
-/* .card-header[aria-expanded='true'] {
-    background-color: rgba(255, 255, 255, 0.2);
-} */
+/* footer media */
 
-.active {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.collapsible-link {
-    width: 100%;
-    position: relative;
-    text-align: left;
-}
-
-.collapsible-link::before {
-    content: '\f067';
-    position: absolute;
-    top: 50%;
-    right: 0.8rem;
-    transform: translateY(-50%);
-    display: block;
-    font-family: 'FontAwesome';
-    font-size: 1.1rem;
-}
-
-.collapsible-link[aria-expanded='true']::before {
-    content: '\f068';
-}
-
-.card p {
-    color: #fff;
-}
-
-.card-body {
-    font-family: 'Roboto Slab', serif;
-    font-size: 14px;
-    text-align: left;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.2) 0% 0% no-repeat padding-box;
-}
-
-.collapse {
-    border-radius: 40px;
-}
-
-
-/* -----------------------------------*/
-
-
-/* ---------->>> FEEDBACK <<<-----------*/
-
-
-/* -----------------------------------*/
-
-.container-midia {
-    margin-top: 180px;
-}
-
-.container-midia div h2 {
-    font-family: 'Ruda', sans-serif;
-    text-align: left;
-    font-weight: 800;
-    font-size: 36px;
-    letter-spacing: 5.4px;
-    color: #68C1E7;
-}
-
-.container-midia div .img-fluid {
-    margin: 10px auto;
-}
-
-.cartao-saude-master h2 {
-    font-family: 'Ruda', sans-serif !important;
-    text-align: center !important;
-    color: #636363 !important;
-}
-
-.container-midia div p {
-    font-family: 'Roboto Slab', serif;
-    font-size: 18px;
-    text-align: center;
-    color: #636363;
-}
-
-.extra {
-    max-width: 368px;
-    height: 167px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-radius: 20px 20px 0px 0px;
-    margin: 0 auto;
-}
-
-
-/* -----------------------------------*/
-
-
-/* ---------->>> CONTAINER - FOOTER <<<-----------*/
-
-
-/* -----------------------------------*/
-
-.info-footer {
-    padding-top: 90px;
-}
-
-.info-footer div p {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    color: #636363;
-}
-
-.lista-footer li h2 {
-    font-family: 'Ruda', sans-serif;
-    font-weight: 800;
-    font-size: 14px;
-    color: #68C1E7;
-}
-
-.text-footer p {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    color: #315267;
-}
-
-.copy {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    color: #636363;
-}
-
-.copy img {
-    margin-left: 50px;
-    padding-bottom: 30px;
-}
-
-.copy p {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    margin: 90px 0;
-}
-
-@media (max-width:990px) {
+@media (max-width:992px) {
     .info-footer {
         text-align: center;
     }
     .info-footer img {
         margin: 0 auto;
+    }
+    .face-insta div {
+        flex-direction: column;
     }
 }

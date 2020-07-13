@@ -1,5 +1,4 @@
-# RankPoliclinica
+# RankTest
+Layout em desenvolvimento
 
-Desenvolvimento do layout para a policlinica saude já
-
-Tecnologias utilizadas: HTML,CSS,JS e Bootstrap
+Tecnologias utilizadas: HTML,CSS, JS e BOOTSTRAP.
